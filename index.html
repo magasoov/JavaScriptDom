@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <img alt="" src="./pic_bulboff.gif"
+            style="width: 100px;" id="imgClick"/>
+    </p>
+    <button onclick="image()">
+        включить
+    </button>
+    <button onclick="image1()">
+        выключить
+    </button>
+
+    <script>
+        function image() {
+    if (document.getElementById("imgClick").src == "pic_bulbon.gif"){
+    } else {
+        document.getElementById("imgClick").src = "pic_bulbon.gif";
+    }
+    document.body.style.backgroundColor = '#111'
+}
+
+function image1() {
+    if (document.getElementById("imgClick").src == "pic_bulboff.gif"){
+    } else {
+        document.getElementById("imgClick").src = "pic_bulboff.gif";
+    }
+    document.body.style.backgroundColor = '#FFF'
+}
+    </script>
+</body>
+</html>
